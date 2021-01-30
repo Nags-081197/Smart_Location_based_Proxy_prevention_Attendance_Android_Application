@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherMarkAttendance">
+
+
+    <ImageView
+        android:id="@+id/teachermarkattQR"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal = "true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/teachermarkattDatetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teachermarkattQR"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Select Date(MM/DD/YYYY)"
+        android:textAlignment="center"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/teachermarkattdateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teachermarkattDatetext"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custombuttonbluestroke"
+        android:text="Choose Date"
+        android:textColor="#4c8bf5" />
+
+    <Button
+        android:id="@+id/teachermarkattgenerateButton"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/teachermarkattdateButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custombuttonblueoval"
+        android:text="Generate QR Code"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/teachermarkattStartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teachermarkattgenerateButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custombuttonbluestroke"
+        android:text="Open Attendance Window"
+        android:textColor="#4c8bf5" />
+
+    <Button
+        android:id="@+id/teachermarkattStopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teachermarkattStartButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custombuttonblueoval"
+        android:text="Close Attendance Window"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

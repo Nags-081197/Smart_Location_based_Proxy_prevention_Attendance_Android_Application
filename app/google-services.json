@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "775849576581",
+    "firebase_url": "https://mcc-final-authentication.firebaseio.com",
+    "project_id": "mcc-final-authentication",
+    "storage_bucket": "mcc-final-authentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775849576581:android:f9a47aa244b235b46e01ec",
+        "android_client_info": {
+          "package_name": "com.example.mcc_final_authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775849576581-ilrm7o8biq7kc7lsisdp181mfno7770u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mcc_final_authentication",
+            "certificate_hash": "afc9ebd3c483be49fc2fd4497809feca75f6c1be"
+          }
+        },
+        {
+          "client_id": "775849576581-6ooap4gou07ukv1pbdq5d66nne40cefp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBTxuzhlUZxDrLJQmSEA091xhPzd8hfXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775849576581-6ooap4gou07ukv1pbdq5d66nne40cefp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

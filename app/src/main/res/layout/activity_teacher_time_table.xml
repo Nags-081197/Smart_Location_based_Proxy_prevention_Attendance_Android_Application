@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherTimeTable">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <CalendarView
+                android:id="@+id/teacherttcalendarView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:animateLayoutChanges="true"
+                android:background="#50B9FF"
+                android:selectedDateVerticalBar="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.063" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <TextView
+                android:id="@+id/teacherttDatetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Select Date(MM/DD/YYYY)"
+                android:textAlignment="center"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/teacherttdateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teacherttDatetext"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custombuttonbluestroke"
+                android:text="Choose Date"
+                android:textColor="#4c8bf5" />
+
+            <Button
+                android:id="@+id/teacherttgenerateButton"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_below="@+id/teacherttdateButton"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custombuttonblueoval"
+                android:text="ADD EVENT"
+                android:textColor="#ffffff" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_below="@+id/teacherttgenerateButton"
+            android:layout_marginTop="15dp">
+
+            <ListView
+                android:id="@+id/teachertteventslist"
+                android:layout_width="match_parent"
+                android:layout_height="497dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/rounded_corner_lv"
+                android:divider="@drawable/customdivider"
+                android:dividerHeight="1dp"/>
+
+
+        </ScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+    </RelativeLayout>

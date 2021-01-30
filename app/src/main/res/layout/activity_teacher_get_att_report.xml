@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherGetAttReport">
+
+
+    <TextView
+        android:id="@+id/teachergetattrptDatetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Select Date(MM/DD/YYYY)"
+        android:textAlignment="center"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/teachergetattrptdateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teachergetattrptDatetext"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custombuttonbluestroke"
+        android:text="Choose Date"
+        android:textColor="#4c8bf5" />
+
+    <Button
+        android:id="@+id/teachergetattrptgenerateButton"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/teachergetattrptdateButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custombuttonblueoval"
+        android:text="GET REPORT"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/teachergetattrptCounttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teachergetattrptgenerateButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1">
+
+    </TextView>
+
+    <ListView
+
+        android:id="@+id/teachergetattrptattlist"
+        android:layout_width="match_parent"
+        android:layout_height="497dp"
+        android:layout_below="@+id/teachergetattrptCounttext"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/rounded_corner_lv"
+        android:divider="@drawable/customdivider"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>
